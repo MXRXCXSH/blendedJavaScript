@@ -5,23 +5,24 @@
 // const styles = ['jazz', 'blues'];
 // styles.push('rock-n-roll');
 // const idx = styles.indexOf('blues');
-// // styles[idx] = 'classic';
+// styles[idx] = 'classic';
 // styles.splice(idx, 2, 'classic', 'bass');
 
-// // console.log(styles);
+// console.log(styles);
 // // console.log(idx);
-// function logItems(array) {
-//   for (let i = 0; i < array.length; i++) {
-//     console.log(`${i + 1},  ${array[i]}`);
-//   }
-// }
-// logItems(styles);
 
 // Напишіть функцію logItems(array), яка приймає масив як аргумент
 // і виводить у консоль кожен його елемент у форматі:
 // "<номер елемента> - <значення елемента>".
 // Використайте цикл for для перебору елементів масиву.
 // Нумерація елементів повинна починатися з 1 (а не з 0).
+
+// function logItems(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     console.log(`${i + 1},  ${array[i]}`);
+//   }
+// }
+// logItems(styles);
 
 //Завдання 2:
 // Напишіть функцію checkLogin(array), яка:
@@ -173,24 +174,24 @@
 // Якщо вказані властивості в обʼєкті відсутні (тобто метод exist повертає false),
 // методи sum і mult мають повертати рядок 'No such propeties'
 
-const calculator = {
-  read(a, b) {
-    this.valueA = a;
-    this.valueB = b;
-  },
+// const calculator = {
+//   read(a, b) {
+//     this.valueA = a;
+//     this.valueB = b;
+//   },
 
-  sum() {
-    if (this.valueA && this.valueB) {
-      return this.valueA + this.valueB;
-    }
-  },
-  mult() {
-    if (this.valueA && this.valueB) {
-      return this.valueA + this.valueB;
-    }
-  },
-};
-calculator.read(2, 5);
+//   sum() {
+//     if (this.valueA && this.valueB) {
+//       return this.valueA + this.valueB;
+//     }
+//   },
+//   mult() {
+//     if (this.valueA && this.valueB) {
+//       return this.valueA + this.valueB;
+//     }
+//   },
+// };
+// calculator.read(2, 5);
 
 //Завдання 10:
 // Напишіть функцію calcTotalPrice(fruits, fruitName),
@@ -201,22 +202,22 @@ calculator.read(2, 5);
 // Зверніть увагу, що в масиві може бути кілька обʼєктів з однаковою
 // назвою фрукта, це також треба урахувати.
 
-const fruits = [
-  { name: 'Яблуко', price: 45, quantity: 7 },
-  { name: 'Апельсин', price: 60, quantity: 4 },
-  { name: 'Банан', price: 125, quantity: 8 },
-  { name: 'Груша', price: 350, quantity: 2 },
-  { name: 'Виноград', price: 440, quantity: 3 },
-  { name: 'Банан', price: 125, quantity: 3 },
-];
-function calcTotalPrice(fruits, fruitName) {
-  let totalPrice = 0;
-  for (const fruit of fruits) {
-    if (fruit.name === fruitName) {
-      totalPrice += fruit.price * fruit.quantity;
-    }
-  }
-  return totalPrice;
-}
+// const fruits = [
+//   { name: 'Яблуко', price: 45, quantity: 7 },
+//   { name: 'Апельсин', price: 60, quantity: 4 },
+//   { name: 'Банан', price: 125, quantity: 8 },
+//   { name: 'Груша', price: 350, quantity: 2 },
+//   { name: 'Виноград', price: 440, quantity: 3 },
+//   { name: 'Банан', price: 125, quantity: 3 },
+// ];
+// function calcTotalPrice(fruits, fruitName) {
+//   let totalPrice = 0;
+//   for (const fruit of fruits) {
+//     if (fruit.name === fruitName) {
+//       totalPrice += fruit.price * fruit.quantity;
+//     }
+//   }
+//   return totalPrice;
+// }
 
-console.log(calcTotalPrice(fruits, 'Яблуко'));
+// console.log(calcTotalPrice(fruits, 'Яблуко'));
